@@ -1,0 +1,47 @@
+{
+  "openevalz_version": 1,
+  "eval": {
+    "id": "bigcodebench",
+    "slug": "bigcodebench",
+    "title": "BigCodeBench: Benchmarking Code Generation with Diverse Function Calls and Complex Instructions",
+    "group": "Coding",
+    "tags": [],
+    "source": "core"
+  },
+  "upstream": {
+    "repo": "https://github.com/UKGovernmentBEIS/inspect_evals",
+    "path": "src/inspect_evals/bigcodebench",
+    "inspect_ai": "0.3.260",
+    "eval_version": "3-B",
+    "dependency": ""
+  },
+  "execution": {
+    "class": "sandbox-local",
+    "cost_class": "high",
+    "sandbox": [
+      "scorer"
+    ],
+    "requires_internet": false,
+    "fast": false,
+    "supports_k8s": false,
+    "environment": ""
+  },
+  "tasks": [
+    {
+      "name": "bigcodebench",
+      "samples": 1140
+    }
+  ],
+  "total_samples": 1140,
+  "external_assets": [
+    {
+      "type": "huggingface",
+      "source": "bigcode/bigcodebench",
+      "state": "pinned"
+    }
+  ],
+  "scaffolds": [
+    "baseline"
+  ],
+  "generated": "2026-08-25"
+}
